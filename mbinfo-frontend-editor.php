@@ -23,7 +23,7 @@ function mbinfo_frontend_enqueue_scripts() {
     $css_url = plugins_url('css/frontend.css', __FILE__ );
     $js_url = plugins_url('js/frontend.js', __FILE__ );
     wp_enqueue_style('mbinfo-figure-frontend-css', $css_url, false, '1.0.0', 'screen');
-    wp_enqueue_style('mbinfo-figure-frontend-js', $js_url, false, '1.0.0', 'screen');
+    wp_enqueue_script('mbinfo-figure-frontend-js', $js_url, false, '1.0.2', 'screen');
 }
 
 function mbinfo_frontend_content_filter($content) {
